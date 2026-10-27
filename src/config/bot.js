@@ -1,3 +1,4 @@
+
 import { logger } from '../utils/logger.js';
 
 export const botConfig = {
@@ -11,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "dnd",
+    status: "online",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,8 +25,8 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "test",     // this is what people actually see
-        type: 0,               // Custom
+        state: "stalking",     // this is what people actually see
+        type: 4,               // Custom
       },
     ],
   },
